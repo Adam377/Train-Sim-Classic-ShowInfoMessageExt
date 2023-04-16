@@ -28,6 +28,14 @@ MSG_LRG = 2
 
 function OnEvent(event)
 	if(event == "Intro Message") then
-		
+		SysCall(
+			"ScenarioManager:ShowInfoMessageExt",
+			"Welcome to this scenario",
+			"IntroMessage.html",
+			0,
+			MSG_VCENTRE + MSG_CENTRE,
+			MSG_REG,
+			TRUE
+		)
 	end
 end
