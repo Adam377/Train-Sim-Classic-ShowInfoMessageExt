@@ -1,0 +1,3 @@
+HTML and Lua code for displaying a message box with an image for use in Train Simulator Classic by DTG (https://store.steampowered.com/app/24010/Train_Simulator_Classic/) for use in this turorial video: https://youtu.be/1cg6gzHWAnw
+
+In the scenario editor, you make a trigger event called "Intro Message" that's triggered at the start of the scenario. Then, TS looks in the ScenarioScript.lua file for a function called 'OnEvent' and executes whatever is in the 'Intro Message' if-statement. In the if-statement, a System Call is made to the ScenarioManager object and calls the ShowInfoMessageExt method with all of it's required parameters.
